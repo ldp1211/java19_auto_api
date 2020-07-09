@@ -1,6 +1,7 @@
 package com.lemon.cases;
 
 import com.alibaba.fastjson.JSONPath;
+import com.fasterxml.jackson.databind.util.ISO8601Utils;
 import com.lemon.constants.Constants;
 import com.lemon.pojo.CaseInfo;
 import com.lemon.utiles.Authentication;
@@ -12,6 +13,7 @@ import org.apache.http.HttpResponse;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.w3c.dom.ls.LSOutput;
 
 import java.math.BigDecimal;
 import java.util.Map;
@@ -49,6 +51,7 @@ public class AddCase extends BaseCase{
         // 9.添加日志
         // 10.报表断言
         Assert.assertEquals(assertResult,"passed");
+        System.out.println("====================");
     }
 
 
