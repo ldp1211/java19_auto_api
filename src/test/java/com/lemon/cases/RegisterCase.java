@@ -47,7 +47,7 @@ public class RegisterCase extends BaseCase{
         addWriteBackData(caseInfo.getId(),Constants.ASSERT_WRITE_BACK_CELLNUM, assertResult);
         // 9.添加日志
         // 10.
-        //Assert.assertEquals(assertResult,"passed");
+     Assert.assertEquals(assertResult,"passed");
 
     }
 
