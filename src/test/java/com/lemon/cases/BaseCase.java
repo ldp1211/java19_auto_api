@@ -53,8 +53,8 @@ public class BaseCase {
         //创建properties对象
         Properties prop = new Properties();
         //获取配置路径
-        String path = BaseCase.class.getClassLoader().getResource("./params.properties").getPath();
-        FileInputStream fis = new FileInputStream(path);
+        // String path = BaseCase.class.getClassLoader().getResource("./params.properties").getPath();
+        FileInputStream fis = new FileInputStream(Constants.PROPERTIES_PATH);
         //读取配置文件中的内容并添加到prop中
         prop.load(fis);
         fis.close();

@@ -15,6 +15,7 @@ public class Constants {
     //public static final String EXCEL_PATH = Constants.class.getClassLoader().getResource("./cases_v3.xlsx").getPath();
     //public static final String EXCEL_PATH = "D:\\code\\idea\\java19_api\\java19_auto_api_v8\\src\\test\\resources\\cases_v3.xlsx";
     public static final String EXCEL_PATH = System.getProperty("user.dir")+ "/src/test/resources/cases_v3.xlsx";
+    public static final String PROPERTIES_PATH = System.getProperty("user.dir")+ "/src/test/resources/params.properties";
 
     //默认请求头
     public static final Map<String,String> HEADERS = new HashMap<>();
